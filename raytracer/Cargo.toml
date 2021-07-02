@@ -1,0 +1,13 @@
+[package]
+name = "raytracer"
+version = "0.1.0"
+authors = ["Pseudo Photograph Company of ACM <ppca@ppca.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+image = "0.23"
+indicatif = "0.15"
+imageproc = "0.21"
+rusttype = "0.9"

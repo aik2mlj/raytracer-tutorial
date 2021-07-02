@@ -1,0 +1,61 @@
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+    branches:
+    - master
+
+name: CI
+
+jobs:
+  lint:
+    name: Lint and Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout 🛎️
+      - uses: actions-rs/toolchain@v1
+        name: Setup Cargo Toolchain 🛎️
+        with:
+          components: rustfmt, clippy
+      - uses: actions-rs/cargo@v1
+        name: Running Tests 🚀
+        with:
+          command: test
+          args: --all-features
+      - uses: actions-rs/cargo@v1
+        name: Check Code Format 🔧
+        with:
+          command: fmt
+          args: -- --check
+      - uses: actions-rs/cargo@v1
+        name: Lint with Clippy 🔧
+        with:
+          command: clippy
+          args: --all-targets --all-features -- -D warnings
+  build:
+    name: Build and Upload
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        name: Checkout 🛎️
+      - uses: actions-rs/toolchain@v1
+        name: Setup Cargo Toolchain 🛎️
+      # - name: Download Dependencies 🛎️
+      #   run: wget https://github.com/google/fonts/raw/master/ofl/encodesans/static/EncodeSans-Regular.ttf
+      - uses: actions-rs/cargo@v1
+        name: Build 🔧
+        with:
+          command: build
+          args: --release --all-features
+      - uses: actions-rs/cargo@v1
+        name: Run 🔧
+        with:
+          command: run
+          args: --release
+      - uses: actions/upload-artifact@v2
+        name: Upload Artifacts 🚀
+        with:
+          name: output
+          path: output/
