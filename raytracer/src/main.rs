@@ -19,12 +19,22 @@ impl World {
 }
 
 fn main() {
+    let is_ci = match std::env::var("CI") {
+        Ok(x) => x == "true",
+        Err(_) => false,
+    };
+
+    let (n_jobs, n_workers): (usize, usize) = if is_ci { (32, 2) } else { (16, 2) };
+
+    println!(
+        "CI: {}, using {} jobs and {} workers",
+        is_ci, n_jobs, n_workers
+    );
+
     let height = 512;
     let width = 1024;
 
     let (tx, rx) = channel();
-    let n_jobs: usize = 32;
-    let n_workers = 4;
     let pool = ThreadPool::new(n_workers);
 
     let bar = ProgressBar::new(n_jobs as u64);
