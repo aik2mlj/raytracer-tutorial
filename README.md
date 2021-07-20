@@ -41,18 +41,21 @@ ACM伪摄影公司，简称PPCA，于2021年成立😉
 
 - Ray Tracing book 1，轻巧的一个周末。
 
-初定code review：第二周周一。
-- book 1相关细节
-- Rust特性掌握（简易，不超出要求章节外）
+- [x] code review（60pts for 工科，40pts for ACM）：第二周周一。
+  - book 1相关细节
+  - Rust特性掌握（简易，不超出要求章节外）
 
 ## Task 2: Next Week
 
-- Ray Tracing book 2 （Motion Blur / Fog可二选一）
+- Ray Tracing book 2
 - 多线程渲染
 
-初定code review：第二周周五
-- book 2相关细节
-- 工科同学结课🎉 作品互评🤯
+- [ ] code review （仅工科，35pts）：第二周周五下午3点
+
+  - 必须完成部分（20pts，未做完不得分）：BVH、Rectangles and Lights；其余部分视完成情况给分，封顶为book 2全部完成 + 多线程渲染。
+
+  - book 2实现部分的相关细节，尤其是BVH部分，请务必尝试搞懂！
+  - 工科同学结课🎉 作品互评🤯
 
 ## Task 3: Rest of Your Life & Extra work
 
