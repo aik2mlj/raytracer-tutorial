@@ -94,7 +94,17 @@ ACM伪摄影公司，简称PPCA，于2021年成立😉
 * 如果你有多余的时间，你可以通过 benchmark 来测试实现功能前后的区别。
   * 完成 Track 3 前请备份代码 (比如记录 git 的 commit id)。完成 Track 4, 5, 6 时请保留原先的场景和程序，在此基础上添加新的内容。
   * 你可以使用 `criterion` crate 做 benchmark。benchmark 的内容可以是往构造好的场景中随机打光线，记录打一条光线所需的时间。
+- **Track 9: Support for .obj ** 支持载入obj文件并渲染。完成这一部分你可能需要：
+  - 了解obj文件格式
+  - 实现一个obj_loader
+    - 可调包，如tobj
+    - 若手写，可酌情给予不超过5分的bonus
+    - OBJ文件格式和tobj可参考[参考资料](https://docs.rs/tobj/3.0.1/tobj/)或自行搜索
+  - 实现对简单多边形和曲面的渲染
 
+- 支持obj可以让你最后的大作更精彩哦 :)                 ~图源参考资料↓~ 
+
+  ![Rust logo with friends](http://i.imgur.com/E1ylrZW.png)
 
 ## More Information
 
