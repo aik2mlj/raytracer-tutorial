@@ -41,7 +41,7 @@ ACM伪摄影公司，简称PPCA，于2021年成立😉
 
 - Ray Tracing book 1，轻巧的一个周末。
 
-- [x] code review（60pts for 工科，40pts for ACM）：第二周周一。
+- [x] code review（60pts for 工科，30pts for ACM）：第二周周一。
   - book 1相关细节
   - Rust特性掌握（简易，不超出要求章节外）
 
@@ -50,7 +50,7 @@ ACM伪摄影公司，简称PPCA，于2021年成立😉
 - Ray Tracing book 2
 - 多线程渲染
 
-- [ ] code review （仅工科，35pts）：第二周周五下午3点
+- [x] code review （仅工科，35pts for 工科&ACM）：第二周周五下午3点
 
   - 必须完成部分（20pts，未做完不得分）：BVH、Rectangles and Lights；其余部分视完成情况给分，封顶为book 2全部完成 + 多线程渲染。
 
@@ -59,50 +59,45 @@ ACM伪摄影公司，简称PPCA，于2021年成立😉
 
 ## Task 3: Rest of Your Life & Extra work
 
-- Ray Tracing book 3
-- Advanced features
+- Ray Tracing book 3（20pts for ACM）
+- Advanced features（Bonus, 10pts for ACM）
+  - 完成3项track即可拿满
+  - 如果你手写实现了obj_loader（没有调包），只要完成2项（包括Track 7）即拿满
 
 初定code review：第四周周五
 - book 3相关细节
 - advanced features相关细节
-- ACM班同学结课🎉 作品互评🤯
+- ACM班同学结课🎉 作品互评🤯（5pts for ACM）
 
 ### Advanced features
-
-这个部分尚未确定，可以暂时不看。目前移用去年的任务。
-
-* **Track 1: New Features** 完成 Rest of Your Life 的剩余部分，重构代码并渲染带玻璃球的 Cornell Box。
-* **Track 2: More Features** 完成 Next Week 中除 Motion Blur 外的部分，渲染噪点较少的最终场景。
-* **Track 3: Reduce Contention** 此项工作的前提条件是完成多线程渲染。在多线程环境中，clone / drop Arc 可能会导致性能下降。因此，我们要尽量减少 Arc 的使用。这项任务的目标是，仅在线程创建的时候 clone Arc；其他地方不出现 Arc，将 Arc 改为引用。
-* **Track 4: Static Dispatch** 调用 `Box<dyn trait>` / `Arc<dyn trait>` / `&dyn trait` 中的函数时会产生额外的开销。我们可以通过泛型来解决这个问题。
+* **Track 1: Reduce Contention** 此项工作的前提条件是完成多线程渲染。在多线程环境中，clone / drop Arc 可能会导致性能下降。因此，我们要尽量减少 Arc 的使用。这项任务的目标是，仅在线程创建的时候 clone Arc；其他地方不出现 Arc，将 Arc 改为引用。
+* **Track 2: Static Dispatch** 调用 `Box<dyn trait>` / `Arc<dyn trait>` / `&dyn trait` 中的函数时会产生额外的开销。我们可以通过泛型来解决这个问题。
   * 这个任务的目标是，通过定义新的泛型材质、变换和物体，比如 `LambertianStatic<T>`，并在场景中使用他们，从而减少动态调用的开销。你也可以另开一个模块定义和之前的材质同名的 struct。
   * 你可以在 `material.rs` 里找到泛型的相关用法。
   * 仅在 `HitRecord`, `ScatterRecord` (这个在 Rest of Your Life 的剩余部分中出现), `HittableList` 和 `BVHNode` 中使用 `dyn`。
   * 如果感兴趣，可以探索如何使用 `macro_rules` 来减少几乎相同的代码写两遍的冗余。
-* **Track 5: Code Generation** 此项工作的前提条件是完成 BVH。
+* **Track 3: Code Generation** 此项工作的前提条件是完成 BVH。
   * 目前，`BVHNode` 是在运行时构造的。这个过程其实可以在编译期完成。我们可以通过过程宏生成所有的物体，并构造静态的 `BVHNode`，从而提升渲染效率。
-  * 为了使用过程宏，在这个工程中，我们已经重新组织了目录结构。请参考[这个 PR](https://github.com/skyzh/raytracer-tutorial/pull/14)进行修改。
+  * `raytracer_codegen`和`raytracer`大概是不能共用module的，你可能需要把一些实现（如`Vec3`）简单地copy到`raytracer_codegen`下。
   * 你可以使用 `cargo expand` 来查看过程宏处理过后的代码。你也可以在编译过程中直接输出过程宏生成的代码。
   * `codegen` 部分不需要通过 clippy。
   * 如果感兴趣，你也可以探索给过程宏传参的方法。e.g. 通过 `make_spheres_impl! { 100 }` 生成可以产生 100 个球的函数。
-* **Track 6: PDF Static Dispatch** 此项工作的前提条件是完成 Rest of your Life 的剩余部分。PDF 中需要处理的物体使用泛型完成，去除代码路径中的 `&dyn`。
-* **Track 7: More Code Generation** 在过程宏中，读取文件，直接从 yaml 或 JSON 文件（选择一种即可）生成场景对应的程序。
+* **Track 4: PDF Static Dispatch** 此项工作的前提条件是完成 Rest of your Life 的剩余部分。PDF 中需要处理的物体使用泛型完成，去除代码路径中的 `&dyn`。
+* **Track 5: More Code Generation** 在过程宏中，读取文件，直接从 yaml 或 JSON 文件（选择一种即可）生成场景对应的程序。
   * 在 `data` 文件夹中给出了一些例子。
   * 例子中 `BVHNode` 里的 `bounding_box` 是冗余数据。你可以不使用这个数据。
   * 读 JSON / yaml 可以调包。
-* **Track 8: Advanced Features** 增加对 Transform 的 PDF 支持。
+* **Track 6: Advanced Features** 增加对 Transform 的 PDF 支持。
 * 如果你有多余的时间，你可以通过 benchmark 来测试实现功能前后的区别。
   * 完成 Track 3 前请备份代码 (比如记录 git 的 commit id)。完成 Track 4, 5, 6 时请保留原先的场景和程序，在此基础上添加新的内容。
   * 你可以使用 `criterion` crate 做 benchmark。benchmark 的内容可以是往构造好的场景中随机打光线，记录打一条光线所需的时间。
-- **Track 9: Support for .obj ** 支持载入obj文件并渲染。完成这一部分你可能需要：
-  - 了解obj文件格式
-  - 实现一个obj_loader
-    - 可调包，如tobj
-    - 若手写，可酌情给予不超过5分的bonus
-    - OBJ文件格式和tobj可参考[参考资料](https://docs.rs/tobj/3.0.1/tobj/)或自行搜索
-  - 实现对简单多边形和曲面的渲染
-
-- 支持obj可以让你最后的大作更精彩哦 :)                 ~图源参考资料↓~ 
+* **Track 7: Support for .obj** 支持载入obj文件并渲染。完成这一部分你可能需要：
+  * 了解obj文件格式
+  * 实现一个obj_loader
+    * 可调包，如tobj
+    * OBJ文件格式和tobj可参考[参考资料](https://docs.rs/tobj/3.0.1/tobj/)或自行搜索
+  * 实现对简单多边形和曲面的渲染
+  * 支持obj可以让你最后的大作更精彩哦 :)                 ~图源参考资料↓~
 
   ![Rust logo with friends](http://i.imgur.com/E1ylrZW.png)
 
