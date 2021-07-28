@@ -1,0 +1,749 @@
+{
+    "objects": {
+        "type": "HitableList",
+        "items": [
+            {
+                "type": "Sphere",
+                "center": {
+                    "x": 0,
+                    "y": -100.5,
+                    "z": -1
+                },
+                "radius": 100,
+                "material": {
+                    "type": "Lambertian",
+                    "albedo": {
+                        "type": "CheckerTexture",
+                        "t0": {
+                            "type": "ConstantTexture",
+                            "color": {
+                                "x": 0.2,
+                                "y": 0.3,
+                                "z": 0.1
+                            }
+                        },
+                        "t1": {
+                            "type": "ConstantTexture",
+                            "color": {
+                                "x": 0.9,
+                                "y": 0.9,
+                                "z": 0.9
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "type": "Sphere",
+                "center": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -1
+                },
+                "radius": 0.5,
+                "material": {
+                    "type": "Dielectric",
+                    "ref_idx": 2
+                }
+            },
+            {
+                "type": "Sphere",
+                "center": {
+                    "x": 0,
+                    "y": 0,
+                    "z": -1
+                },
+                "radius": 0.49,
+                "material": {
+                    "type": "DiffuseLight",
+                    "emit": {
+                        "type": "CheckerTexture",
+                        "t0": {
+                            "type": "ConstantTexture",
+                            "color": {
+                                "x": 1,
+                                "y": 0.6,
+                                "z": 0.4
+                            }
+                        },
+                        "t1": {
+                            "type": "ConstantTexture",
+                            "color": {
+                                "x": 1,
+                                "y": 0.75,
+                                "z": 0.3
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "type": "Sphere",
+                "center": {
+                    "x": 1,
+                    "y": 0,
+                    "z": -1
+                },
+                "radius": 0.3,
+                "material": {
+                    "type": "Metal",
+                    "albedo": {
+                        "x": 0.8,
+                        "y": 0.6,
+                        "z": 0.3
+                    },
+                    "fuzz": 0
+                }
+            },
+            {
+                "type": "Sphere",
+                "center": {
+                    "x": -1,
+                    "y": 0,
+                    "z": -1
+                },
+                "radius": 0.3,
+                "material": {
+                    "type": "Dielectric",
+                    "ref_idx": 1.5
+                }
+            },
+            {
+                "type": "BVHNode",
+                "left": {
+                    "type": "BVHNode",
+                    "left": {
+                        "type": "BVHNode",
+                        "left": {
+                            "type": "BVHNode",
+                            "left": {
+                                "type": "Sphere",
+                                "center": {
+                                    "x": 4.9079466,
+                                    "y": -0.34782803,
+                                    "z": -2.781303
+                                },
+                                "radius": 0.13695477,
+                                "material": {
+                                    "type": "DiffuseLight",
+                                    "emit": {
+                                        "type": "ConstantTexture",
+                                        "color": {
+                                            "x": 0.9031705,
+                                            "y": 0.8692446,
+                                            "z": 0.84930134
+                                        }
+                                    }
+                                }
+                            },
+                            "right": {
+                                "type": "Sphere",
+                                "center": {
+                                    "x": 4.9079466,
+                                    "y": -0.34782803,
+                                    "z": -2.781303
+                                },
+                                "radius": 0.15217197,
+                                "material": {
+                                    "type": "Dielectric",
+                                    "ref_idx": 2
+                                }
+                            },
+                            "bounding_box": {
+                                "min": {
+                                    "x": 4.7557745,
+                                    "y": -0.5,
+                                    "z": -2.933475
+                                },
+                                "max": {
+                                    "x": 5.0601187,
+                                    "y": -0.19565606,
+                                    "z": -2.6291308
+                                }
+                            }
+                        },
+                        "right": {
+                            "type": "BVHNode",
+                            "left": {
+                                "type": "Sphere",
+                                "center": {
+                                    "x": 0.39035225,
+                                    "y": -0.31315458,
+                                    "z": -4.1134834
+                                },
+                                "radius": 0.16816086,
+                                "material": {
+                                    "type": "DiffuseLight",
+                                    "emit": {
+                                        "type": "ConstantTexture",
+                                        "color": {
+                                            "x": 0.85636026,
+                                            "y": 0.79803497,
+                                            "z": 0.7937566
+                                        }
+                                    }
+                                }
+                            },
+                            "right": {
+                                "type": "Sphere",
+                                "center": {
+                                    "x": 0.39035225,
+                                    "y": -0.31315458,
+                                    "z": -4.1134834
+                                },
+                                "radius": 0.1868454,
+                                "material": {
+                                    "type": "Dielectric",
+                                    "ref_idx": 2
+                                }
+                            },
+                            "bounding_box": {
+                                "min": {
+                                    "x": 0.20350684,
+                                    "y": -0.5,
+                                    "z": -4.3003287
+                                },
+                                "max": {
+                                    "x": 0.5771977,
+                                    "y": -0.12630917,
+                                    "z": -3.9266381
+                                }
+                            }
+                        },
+                        "bounding_box": {
+                            "min": {
+                                "x": 0.20350684,
+                                "y": -0.5,
+                                "z": -4.3003287
+                            },
+                            "max": {
+                                "x": 5.0601187,
+                                "y": -0.12630917,
+                                "z": -2.6291308
+                            }
+                        }
+                    },
+                    "right": {
+                        "type": "BVHNode",
+                        "left": {
+                            "type": "BVHNode",
+                            "left": {
+                                "type": "Sphere",
+                                "center": {
+                                    "x": -0.7054734,
+                                    "y": -0.30646724,
+                                    "z": -1.1011779
+                                },
+                                "radius": 0.17417948,
+                                "material": {
+                                    "type": "DiffuseLight",
+                                    "emit": {
+                                        "type": "ConstantTexture",
+                                        "color": {
+                                            "x": 0.87173194,
+                                            "y": 0.92756987,
+                                            "z": 0.76063985
+                                        }
+                                    }
+                                }
+                            },
+                            "right": {
+                                "type": "Sphere",
+                                "center": {
+                                    "x": -0.7054734,
+                                    "y": -0.30646724,
+                                    "z": -1.1011779
+                                },
+                                "radius": 0.19353276,
+                                "material": {
+                                    "type": "Dielectric",
+                                    "ref_idx": 2
+                                }
+                            },
+                            "bounding_box": {
+                                "min": {
+                                    "x": -0.8990062,
+                                    "y": -0.5,
+                                    "z": -1.2947106
+                                },
+                                "max": {
+                                    "x": -0.51194066,
+                                    "y": -0.11293447,
+                                    "z": -0.90764517
+                                }
+                            }
+                        },
+                        "right": {
+                            "type": "BVHNode",
+                            "left": {
+                                "type": "BVHNode",
+                                "left": {
+                                    "type": "Sphere",
+                                    "center": {
+                                        "x": -4.9500046,
+                                        "y": -0.41561562,
+                                        "z": 0.92653036
+                                    },
+                                    "radius": 0.07594593,
+                                    "material": {
+                                        "type": "DiffuseLight",
+                                        "emit": {
+                                            "type": "ConstantTexture",
+                                            "color": {
+                                                "x": 0.87115496,
+                                                "y": 0.7113601,
+                                                "z": 0.85096556
+                                            }
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "type": "Sphere",
+                                    "center": {
+                                        "x": -4.9500046,
+                                        "y": -0.41561562,
+                                        "z": 0.92653036
+                                    },
+                                    "radius": 0.08438437,
+                                    "material": {
+                                        "type": "Dielectric",
+                                        "ref_idx": 2
+                                    }
+                                },
+                                "bounding_box": {
+                                    "min": {
+                                        "x": -5.034389,
+                                        "y": -0.5,
+                                        "z": 0.842146
+                                    },
+                                    "max": {
+                                        "x": -4.86562,
+                                        "y": -0.33123124,
+                                        "z": 1.0109147
+                                    }
+                                }
+                            },
+                            "right": {
+                                "type": "BVHNode",
+                                "left": {
+                                    "type": "Sphere",
+                                    "center": {
+                                        "x": 3.0714788,
+                                        "y": -0.42084506,
+                                        "z": 1.4348593
+                                    },
+                                    "radius": 0.07123944,
+                                    "material": {
+                                        "type": "DiffuseLight",
+                                        "emit": {
+                                            "type": "ConstantTexture",
+                                            "color": {
+                                                "x": 0.98752415,
+                                                "y": 0.9204275,
+                                                "z": 0.9368182
+                                            }
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "type": "Sphere",
+                                    "center": {
+                                        "x": 3.0714788,
+                                        "y": -0.42084506,
+                                        "z": 1.4348593
+                                    },
+                                    "radius": 0.07915494,
+                                    "material": {
+                                        "type": "Dielectric",
+                                        "ref_idx": 2
+                                    }
+                                },
+                                "bounding_box": {
+                                    "min": {
+                                        "x": 2.9923239,
+                                        "y": -0.5,
+                                        "z": 1.3557043
+                                    },
+                                    "max": {
+                                        "x": 3.1506338,
+                                        "y": -0.34169012,
+                                        "z": 1.5140142
+                                    }
+                                }
+                            },
+                            "bounding_box": {
+                                "min": {
+                                    "x": -5.034389,
+                                    "y": -0.5,
+                                    "z": 0.842146
+                                },
+                                "max": {
+                                    "x": 3.1506338,
+                                    "y": -0.33123124,
+                                    "z": 1.5140142
+                                }
+                            }
+                        },
+                        "bounding_box": {
+                            "min": {
+                                "x": -5.034389,
+                                "y": -0.5,
+                                "z": -1.2947106
+                            },
+                            "max": {
+                                "x": 3.1506338,
+                                "y": -0.11293447,
+                                "z": 1.5140142
+                            }
+                        }
+                    },
+                    "bounding_box": {
+                        "min": {
+                            "x": -5.034389,
+                            "y": -0.5,
+                            "z": -4.3003287
+                        },
+                        "max": {
+                            "x": 5.0601187,
+                            "y": -0.11293447,
+                            "z": 1.5140142
+                        }
+                    }
+                },
+                "right": {
+                    "type": "BVHNode",
+                    "left": {
+                        "type": "BVHNode",
+                        "left": {
+                            "type": "BVHNode",
+                            "left": {
+                                "type": "Sphere",
+                                "center": {
+                                    "x": -4.2697883,
+                                    "y": -0.398752,
+                                    "z": 4.9775867
+                                },
+                                "radius": 0.091123186,
+                                "material": {
+                                    "type": "DiffuseLight",
+                                    "emit": {
+                                        "type": "ConstantTexture",
+                                        "color": {
+                                            "x": 0.9022073,
+                                            "y": 0.91365147,
+                                            "z": 0.9686682
+                                        }
+                                    }
+                                }
+                            },
+                            "right": {
+                                "type": "Sphere",
+                                "center": {
+                                    "x": -4.2697883,
+                                    "y": -0.398752,
+                                    "z": 4.9775867
+                                },
+                                "radius": 0.10124799,
+                                "material": {
+                                    "type": "Dielectric",
+                                    "ref_idx": 2
+                                }
+                            },
+                            "bounding_box": {
+                                "min": {
+                                    "x": -4.371036,
+                                    "y": -0.5,
+                                    "z": 4.876339
+                                },
+                                "max": {
+                                    "x": -4.1685405,
+                                    "y": -0.297504,
+                                    "z": 5.0788345
+                                }
+                            }
+                        },
+                        "right": {
+                            "type": "BVHNode",
+                            "left": {
+                                "type": "Sphere",
+                                "center": {
+                                    "x": -4.6101513,
+                                    "y": -0.3916151,
+                                    "z": 4.9935675
+                                },
+                                "radius": 0.097546406,
+                                "material": {
+                                    "type": "DiffuseLight",
+                                    "emit": {
+                                        "type": "ConstantTexture",
+                                        "color": {
+                                            "x": 0.7187334,
+                                            "y": 0.956705,
+                                            "z": 0.7965219
+                                        }
+                                    }
+                                }
+                            },
+                            "right": {
+                                "type": "Sphere",
+                                "center": {
+                                    "x": -4.6101513,
+                                    "y": -0.3916151,
+                                    "z": 4.9935675
+                                },
+                                "radius": 0.1083849,
+                                "material": {
+                                    "type": "Dielectric",
+                                    "ref_idx": 2
+                                }
+                            },
+                            "bounding_box": {
+                                "min": {
+                                    "x": -4.7185364,
+                                    "y": -0.5,
+                                    "z": 4.8851824
+                                },
+                                "max": {
+                                    "x": -4.501766,
+                                    "y": -0.2832302,
+                                    "z": 5.1019526
+                                }
+                            }
+                        },
+                        "bounding_box": {
+                            "min": {
+                                "x": -4.7185364,
+                                "y": -0.5,
+                                "z": 4.876339
+                            },
+                            "max": {
+                                "x": -4.1685405,
+                                "y": -0.2832302,
+                                "z": 5.1019526
+                            }
+                        }
+                    },
+                    "right": {
+                        "type": "BVHNode",
+                        "left": {
+                            "type": "BVHNode",
+                            "left": {
+                                "type": "Sphere",
+                                "center": {
+                                    "x": -2.9925895,
+                                    "y": -0.32935193,
+                                    "z": 1.9932852
+                                },
+                                "radius": 0.15358326,
+                                "material": {
+                                    "type": "DiffuseLight",
+                                    "emit": {
+                                        "type": "ConstantTexture",
+                                        "color": {
+                                            "x": 0.93600863,
+                                            "y": 0.9367479,
+                                            "z": 0.74730855
+                                        }
+                                    }
+                                }
+                            },
+                            "right": {
+                                "type": "Sphere",
+                                "center": {
+                                    "x": -2.9925895,
+                                    "y": -0.32935193,
+                                    "z": 1.9932852
+                                },
+                                "radius": 0.17064807,
+                                "material": {
+                                    "type": "Dielectric",
+                                    "ref_idx": 2
+                                }
+                            },
+                            "bounding_box": {
+                                "min": {
+                                    "x": -3.1632376,
+                                    "y": -0.5,
+                                    "z": 1.8226371
+                                },
+                                "max": {
+                                    "x": -2.8219414,
+                                    "y": -0.15870386,
+                                    "z": 2.1639333
+                                }
+                            }
+                        },
+                        "right": {
+                            "type": "BVHNode",
+                            "left": {
+                                "type": "BVHNode",
+                                "left": {
+                                    "type": "Sphere",
+                                    "center": {
+                                        "x": 3.6397085,
+                                        "y": -0.30182955,
+                                        "z": 4.917198
+                                    },
+                                    "radius": 0.1783534,
+                                    "material": {
+                                        "type": "DiffuseLight",
+                                        "emit": {
+                                            "type": "ConstantTexture",
+                                            "color": {
+                                                "x": 0.94638973,
+                                                "y": 0.9464173,
+                                                "z": 0.7194164
+                                            }
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "type": "Sphere",
+                                    "center": {
+                                        "x": 3.6397085,
+                                        "y": -0.30182955,
+                                        "z": 4.917198
+                                    },
+                                    "radius": 0.19817045,
+                                    "material": {
+                                        "type": "Dielectric",
+                                        "ref_idx": 2
+                                    }
+                                },
+                                "bounding_box": {
+                                    "min": {
+                                        "x": 3.441538,
+                                        "y": -0.5,
+                                        "z": 4.7190275
+                                    },
+                                    "max": {
+                                        "x": 3.837879,
+                                        "y": -0.10365909,
+                                        "z": 5.115369
+                                    }
+                                }
+                            },
+                            "right": {
+                                "type": "BVHNode",
+                                "left": {
+                                    "type": "Sphere",
+                                    "center": {
+                                        "x": 4.865635,
+                                        "y": -0.30002245,
+                                        "z": 4.437538
+                                    },
+                                    "radius": 0.17997979,
+                                    "material": {
+                                        "type": "DiffuseLight",
+                                        "emit": {
+                                            "type": "ConstantTexture",
+                                            "color": {
+                                                "x": 0.8746896,
+                                                "y": 0.71821547,
+                                                "z": 0.97889817
+                                            }
+                                        }
+                                    }
+                                },
+                                "right": {
+                                    "type": "Sphere",
+                                    "center": {
+                                        "x": 4.865635,
+                                        "y": -0.30002245,
+                                        "z": 4.437538
+                                    },
+                                    "radius": 0.19997755,
+                                    "material": {
+                                        "type": "Dielectric",
+                                        "ref_idx": 2
+                                    }
+                                },
+                                "bounding_box": {
+                                    "min": {
+                                        "x": 4.6656575,
+                                        "y": -0.5,
+                                        "z": 4.2375607
+                                    },
+                                    "max": {
+                                        "x": 5.0656123,
+                                        "y": -0.100044906,
+                                        "z": 4.6375155
+                                    }
+                                }
+                            },
+                            "bounding_box": {
+                                "min": {
+                                    "x": 3.441538,
+                                    "y": -0.5,
+                                    "z": 4.2375607
+                                },
+                                "max": {
+                                    "x": 5.0656123,
+                                    "y": -0.100044906,
+                                    "z": 5.115369
+                                }
+                            }
+                        },
+                        "bounding_box": {
+                            "min": {
+                                "x": -3.1632376,
+                                "y": -0.5,
+                                "z": 1.8226371
+                            },
+                            "max": {
+                                "x": 5.0656123,
+                                "y": -0.100044906,
+                                "z": 5.115369
+                            }
+                        }
+                    },
+                    "bounding_box": {
+                        "min": {
+                            "x": -4.7185364,
+                            "y": -0.5,
+                            "z": 1.8226371
+                        },
+                        "max": {
+                            "x": 5.0656123,
+                            "y": -0.100044906,
+                            "z": 5.115369
+                        }
+                    }
+                },
+                "bounding_box": {
+                    "min": {
+                        "x": -5.034389,
+                        "y": -0.5,
+                        "z": -4.3003287
+                    },
+                    "max": {
+                        "x": 5.0656123,
+                        "y": -0.100044906,
+                        "z": 5.115369
+                    }
+                }
+            }
+        ]
+    },
+    "camera": {
+        "look_from": {
+            "x": -6,
+            "y": 2,
+            "z": -6
+        },
+        "look_at": {
+            "x": 0,
+            "y": 0,
+            "z": -1
+        },
+        "vup": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+        },
+        "vfov": 45,
+        "aspect": 1,
+        "aperture": 0.1,
+        "focus_dist": 8.062258
+    }
+}

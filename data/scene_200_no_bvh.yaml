@@ -1,0 +1,4697 @@
+objects:
+  type: HitableList
+  items:
+    - type: Sphere
+      center:
+        x: 0
+        y: -100.5
+        z: -1
+      radius: 100
+      material:
+        type: Lambertian
+        albedo:
+          type: CheckerTexture
+          t0:
+            type: ConstantTexture
+            color:
+              x: 0.2
+              y: 0.3
+              z: 0.1
+          t1:
+            type: ConstantTexture
+            color:
+              x: 0.9
+              y: 0.9
+              z: 0.9
+    - type: Sphere
+      center:
+        x: 0
+        y: 0
+        z: -1
+      radius: 0.5
+      material:
+        type: Dielectric
+        ref_idx: 2
+    - type: Sphere
+      center:
+        x: 0
+        y: 0
+        z: -1
+      radius: 0.49
+      material:
+        type: DiffuseLight
+        emit:
+          type: CheckerTexture
+          t0:
+            type: ConstantTexture
+            color:
+              x: 1
+              y: 0.6
+              z: 0.4
+          t1:
+            type: ConstantTexture
+            color:
+              x: 1
+              y: 0.75
+              z: 0.3
+    - type: Sphere
+      center:
+        x: 1
+        y: 0
+        z: -1
+      radius: 0.3
+      material:
+        type: Metal
+        albedo:
+          x: 0.8
+          y: 0.6
+          z: 0.3
+        fuzz: 0
+    - type: Sphere
+      center:
+        x: -1
+        y: 0
+        z: -1
+      radius: 0.3
+      material:
+        type: Dielectric
+        ref_idx: 1.5
+    - type: HitableList
+      items:
+        - type: Sphere
+          center:
+            x: 0.2218113
+            y: -0.34810954
+            z: -3.2751775
+          radius: 0.13670139
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8450854
+                y: 0.8910702
+                z: 0.92231077
+        - type: Sphere
+          center:
+            x: 0.2218113
+            y: -0.34810954
+            z: -3.2751775
+          radius: 0.15189044
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.622734
+            y: -0.33215362
+            z: -1.2669325
+          radius: 0.15106173
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8908573
+                y: 0.79268247
+                z: 0.90277267
+        - type: Sphere
+          center:
+            x: 4.622734
+            y: -0.33215362
+            z: -1.2669325
+          radius: 0.16784637
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.8662176
+            y: -0.40909457
+            z: -4.565215
+          radius: 0.0818149
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9535304
+                y: 0.84376764
+                z: 0.81929713
+        - type: Sphere
+          center:
+            x: -0.8662176
+            y: -0.40909457
+            z: -4.565215
+          radius: 0.09090544
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.9075286
+            y: -0.320266
+            z: 3.9875526
+          radius: 0.16176057
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7731029
+                y: 0.7010326
+                z: 0.98346704
+        - type: Sphere
+          center:
+            x: -1.9075286
+            y: -0.320266
+            z: 3.9875526
+          radius: 0.17973398
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.791827
+            y: -0.4140087
+            z: -1.6076291
+          radius: 0.07739216
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.70596534
+                y: 0.83679986
+                z: 0.7621265
+        - type: Sphere
+          center:
+            x: -4.791827
+            y: -0.4140087
+            z: -1.6076291
+          radius: 0.08599129
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.5020852
+            y: -0.32111847
+            z: 3.4039898
+          radius: 0.16099338
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8183865
+                y: 0.7138929
+                z: 0.8947051
+        - type: Sphere
+          center:
+            x: -3.5020852
+            y: -0.32111847
+            z: 3.4039898
+          radius: 0.17888154
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.034474373
+            y: -0.33627206
+            z: 1.112411
+          radius: 0.14735514
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8858308
+                y: 0.7720889
+                z: 0.84996754
+        - type: Sphere
+          center:
+            x: -0.034474373
+            y: -0.33627206
+            z: 1.112411
+          radius: 0.16372794
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.7042427
+            y: -0.31140262
+            z: -1.8903244
+          radius: 0.16973765
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.74350196
+                y: 0.9637282
+                z: 0.75142086
+        - type: Sphere
+          center:
+            x: 2.7042427
+            y: -0.31140262
+            z: -1.8903244
+          radius: 0.1885974
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.9450617
+            y: -0.42417255
+            z: -3.373679
+          radius: 0.06824471
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.74370235
+                y: 0.7684457
+                z: 0.9867985
+        - type: Sphere
+          center:
+            x: -0.9450617
+            y: -0.42417255
+            z: -3.373679
+          radius: 0.07582746
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.4061003
+            y: -0.38575566
+            z: 4.4528065
+          radius: 0.102819905
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9632602
+                y: 0.8431976
+                z: 0.8141232
+        - type: Sphere
+          center:
+            x: 3.4061003
+            y: -0.38575566
+            z: 4.4528065
+          radius: 0.11424434
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.1492467
+            y: -0.35072073
+            z: -3.0563056
+          radius: 0.13435134
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9262715
+                y: 0.82571566
+                z: 0.97651076
+        - type: Sphere
+          center:
+            x: 1.1492467
+            y: -0.35072073
+            z: -3.0563056
+          radius: 0.14927927
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.1039245
+            y: -0.32544068
+            z: -4.3621826
+          radius: 0.15710339
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.74196327
+                y: 0.8246619
+                z: 0.7987734
+        - type: Sphere
+          center:
+            x: -1.1039245
+            y: -0.32544068
+            z: -4.3621826
+          radius: 0.17455932
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.4024405
+            y: -0.41210598
+            z: -4.4170594
+          radius: 0.07910463
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9808446
+                y: 0.9890518
+                z: 0.8475584
+        - type: Sphere
+          center:
+            x: -3.4024405
+            y: -0.41210598
+            z: -4.4170594
+          radius: 0.08789404
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.7396641
+            y: -0.44672066
+            z: 2.44491
+          radius: 0.047951404
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7446649
+                y: 0.9509781
+                z: 0.93266064
+        - type: Sphere
+          center:
+            x: -0.7396641
+            y: -0.44672066
+            z: 2.44491
+          radius: 0.05327934
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.0456324
+            y: -0.44455338
+            z: -2.606157
+          radius: 0.04990196
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8176461
+                y: 0.7531434
+                z: 0.96986365
+        - type: Sphere
+          center:
+            x: -1.0456324
+            y: -0.44455338
+            z: -2.606157
+          radius: 0.05544662
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.58035755
+            y: -0.30341813
+            z: 3.8332043
+          radius: 0.17692368
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8599535
+                y: 0.89378667
+                z: 0.7367884
+        - type: Sphere
+          center:
+            x: 0.58035755
+            y: -0.30341813
+            z: 3.8332043
+          radius: 0.19658187
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.6585054
+            y: -0.38881874
+            z: -0.953063
+          radius: 0.100063115
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.81575376
+                y: 0.868798
+                z: 0.727433
+        - type: Sphere
+          center:
+            x: 2.6585054
+            y: -0.38881874
+            z: -0.953063
+          radius: 0.111181244
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.1317694
+            y: -0.31730092
+            z: 4.942297
+          radius: 0.16442919
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.70572674
+                y: 0.80320585
+                z: 0.7784188
+        - type: Sphere
+          center:
+            x: -1.1317694
+            y: -0.31730092
+            z: 4.942297
+          radius: 0.1826991
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.4699535
+            y: -0.3057503
+            z: -2.6130295
+          radius: 0.1748247
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7199224
+                y: 0.89652485
+                z: 0.809708
+        - type: Sphere
+          center:
+            x: 4.4699535
+            y: -0.3057503
+            z: -2.6130295
+          radius: 0.19424967
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.7877543
+            y: -0.3795192
+            z: -2.785728
+          radius: 0.108432725
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.941839
+                y: 0.87019956
+                z: 0.96145296
+        - type: Sphere
+          center:
+            x: -1.7877543
+            y: -0.3795192
+            z: -2.785728
+          radius: 0.120480806
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.6561787
+            y: -0.43646985
+            z: -0.64391613
+          radius: 0.057177123
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9819958
+                y: 0.7106577
+                z: 0.91129553
+        - type: Sphere
+          center:
+            x: -3.6561787
+            y: -0.43646985
+            z: -0.64391613
+          radius: 0.06353014
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.3006935
+            y: -0.44384187
+            z: 3.4497662
+          radius: 0.050542325
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8399832
+                y: 0.9805908
+                z: 0.97734153
+        - type: Sphere
+          center:
+            x: 4.3006935
+            y: -0.44384187
+            z: 3.4497662
+          radius: 0.05615814
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.6220274
+            y: -0.3476774
+            z: -3.0321765
+          radius: 0.13709033
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7250203
+                y: 0.75402284
+                z: 0.9959612
+        - type: Sphere
+          center:
+            x: -2.6220274
+            y: -0.3476774
+            z: -3.0321765
+          radius: 0.15232259
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.83705187
+            y: -0.44817802
+            z: 4.4281282
+          radius: 0.046639774
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7006547
+                y: 0.9810405
+                z: 0.96005523
+        - type: Sphere
+          center:
+            x: 0.83705187
+            y: -0.44817802
+            z: 4.4281282
+          radius: 0.051821973
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.7462101
+            y: -0.32775754
+            z: 3.3402786
+          radius: 0.15501821
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9461214
+                y: 0.90538
+                z: 0.9630665
+        - type: Sphere
+          center:
+            x: 1.7462101
+            y: -0.32775754
+            z: 3.3402786
+          radius: 0.17224246
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.9762554
+            y: -0.30626822
+            z: 4.380727
+          radius: 0.1743586
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8949552
+                y: 0.8006778
+                z: 0.85622996
+        - type: Sphere
+          center:
+            x: 1.9762554
+            y: -0.30626822
+            z: 4.380727
+          radius: 0.19373178
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.7394967
+            y: -0.3214952
+            z: -0.603281
+          radius: 0.1606543
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8941818
+                y: 0.8747375
+                z: 0.84046966
+        - type: Sphere
+          center:
+            x: -4.7394967
+            y: -0.3214952
+            z: -0.603281
+          radius: 0.1785048
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.0085335
+            y: -0.41617835
+            z: -2.7331889
+          radius: 0.0754395
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7479581
+                y: 0.95838094
+                z: 0.93622833
+        - type: Sphere
+          center:
+            x: 3.0085335
+            y: -0.41617835
+            z: -2.7331889
+          radius: 0.08382167
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.6811256
+            y: -0.30321157
+            z: -0.6229973
+          radius: 0.17710957
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8819559
+                y: 0.9340448
+                z: 0.74630827
+        - type: Sphere
+          center:
+            x: 4.6811256
+            y: -0.30321157
+            z: -0.6229973
+          radius: 0.19678842
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.4582863
+            y: -0.35871428
+            z: -0.93564606
+          radius: 0.12715715
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.72777075
+                y: 0.994382
+                z: 0.9191751
+        - type: Sphere
+          center:
+            x: 1.4582863
+            y: -0.35871428
+            z: -0.93564606
+          radius: 0.14128573
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.1540976
+            y: -0.40970707
+            z: 2.0865545
+          radius: 0.08126365
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7847413
+                y: 0.856859
+                z: 0.8687255
+        - type: Sphere
+          center:
+            x: 2.1540976
+            y: -0.40970707
+            z: 2.0865545
+          radius: 0.090292946
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.77917576
+            y: -0.44746983
+            z: 2.1304011
+          radius: 0.04727715
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.75843376
+                y: 0.88686544
+                z: 0.7489397
+        - type: Sphere
+          center:
+            x: 0.77917576
+            y: -0.44746983
+            z: 2.1304011
+          radius: 0.052530166
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.637331
+            y: -0.35825664
+            z: -1.5896928
+          radius: 0.12756903
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.94458336
+                y: 0.8408466
+                z: 0.71372706
+        - type: Sphere
+          center:
+            x: 3.637331
+            y: -0.35825664
+            z: -1.5896928
+          radius: 0.14174338
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.91646767
+            y: -0.30831003
+            z: -4.940053
+          radius: 0.17252097
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.83526474
+                y: 0.9778795
+                z: 0.79730445
+        - type: Sphere
+          center:
+            x: 0.91646767
+            y: -0.30831003
+            z: -4.940053
+          radius: 0.19168997
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.7741318
+            y: -0.33834326
+            z: -3.9794528
+          radius: 0.14549105
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.97519845
+                y: 0.8211661
+                z: 0.76090544
+        - type: Sphere
+          center:
+            x: 0.7741318
+            y: -0.33834326
+            z: -3.9794528
+          radius: 0.16165672
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.560767
+            y: -0.40605938
+            z: 0.35286045
+          radius: 0.08454655
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.86311144
+                y: 0.94788885
+                z: 0.72555715
+        - type: Sphere
+          center:
+            x: 4.560767
+            y: -0.40605938
+            z: 0.35286045
+          radius: 0.093940616
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.1835284
+            y: -0.38059968
+            z: 2.812996
+          radius: 0.10746029
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8800183
+                y: 0.9570228
+                z: 0.8175517
+        - type: Sphere
+          center:
+            x: -4.1835284
+            y: -0.38059968
+            z: 2.812996
+          radius: 0.11940032
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.6268435
+            y: -0.40548545
+            z: -2.1540964
+          radius: 0.08506308
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.70067316
+                y: 0.95050347
+                z: 0.8875932
+        - type: Sphere
+          center:
+            x: 2.6268435
+            y: -0.40548545
+            z: -2.1540964
+          radius: 0.094514534
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.793685
+            y: -0.39631048
+            z: 0.23569489
+          radius: 0.09332057
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8248768
+                y: 0.86248624
+                z: 0.738844
+        - type: Sphere
+          center:
+            x: 1.793685
+            y: -0.39631048
+            z: 0.23569489
+          radius: 0.10368953
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.2358868
+            y: -0.30090737
+            z: 1.4005375
+          radius: 0.17918335
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.78049874
+                y: 0.86724246
+                z: 0.8928348
+        - type: Sphere
+          center:
+            x: -1.2358868
+            y: -0.30090737
+            z: 1.4005375
+          radius: 0.19909261
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.0739484
+            y: -0.3862999
+            z: 1.444726
+          radius: 0.102330096
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.88154286
+                y: 0.84737897
+                z: 0.8871934
+        - type: Sphere
+          center:
+            x: -2.0739484
+            y: -0.3862999
+            z: 1.444726
+          radius: 0.11370011
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.8179908
+            y: -0.43206692
+            z: 0.92346907
+          radius: 0.06113978
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7173284
+                y: 0.7331843
+                z: 0.78019845
+        - type: Sphere
+          center:
+            x: -2.8179908
+            y: -0.43206692
+            z: 0.92346907
+          radius: 0.06793309
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.588975
+            y: -0.4372956
+            z: 3.184307
+          radius: 0.056433965
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.91684496
+                y: 0.9257239
+                z: 0.88059413
+        - type: Sphere
+          center:
+            x: -4.588975
+            y: -0.4372956
+            z: 3.184307
+          radius: 0.06270441
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.0869694
+            y: -0.4052989
+            z: 3.9959698
+          radius: 0.08523101
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.93066955
+                y: 0.9767281
+                z: 0.71395206
+        - type: Sphere
+          center:
+            x: 1.0869694
+            y: -0.4052989
+            z: 3.9959698
+          radius: 0.094701126
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.8547325
+            y: -0.40128025
+            z: 2.9510536
+          radius: 0.088847764
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.82831943
+                y: 0.8505486
+                z: 0.91103536
+        - type: Sphere
+          center:
+            x: 2.8547325
+            y: -0.40128025
+            z: 2.9510536
+          radius: 0.09871974
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.017193
+            y: -0.40472183
+            z: 0.31619644
+          radius: 0.08575036
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.98030174
+                y: 0.798897
+                z: 0.7281343
+        - type: Sphere
+          center:
+            x: -3.017193
+            y: -0.40472183
+            z: 0.31619644
+          radius: 0.09527817
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.8211439
+            y: -0.38723826
+            z: 2.5967512
+          radius: 0.10148554
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9308494
+                y: 0.9327663
+                z: 0.81805205
+        - type: Sphere
+          center:
+            x: -2.8211439
+            y: -0.38723826
+            z: 2.5967512
+          radius: 0.11276172
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.9076722
+            y: -0.30979717
+            z: -1.4187276
+          radius: 0.17118256
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.84391004
+                y: 0.95144653
+                z: 0.7942014
+        - type: Sphere
+          center:
+            x: -3.9076722
+            y: -0.30979717
+            z: -1.4187276
+          radius: 0.19020285
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.8843346
+            y: -0.41999602
+            z: -0.17140007
+          radius: 0.072003566
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.88508976
+                y: 0.9727278
+                z: 0.8743901
+        - type: Sphere
+          center:
+            x: 4.8843346
+            y: -0.41999602
+            z: -0.17140007
+          radius: 0.08000396
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.4218245
+            y: -0.39292553
+            z: 0.53610563
+          radius: 0.096367024
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.78655183
+                y: 0.75125444
+                z: 0.9497137
+        - type: Sphere
+          center:
+            x: 1.4218245
+            y: -0.39292553
+            z: 0.53610563
+          radius: 0.10707448
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.71406937
+            y: -0.3934775
+            z: 0.6474781
+          radius: 0.09587025
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.96426094
+                y: 0.98034364
+                z: 0.8149166
+        - type: Sphere
+          center:
+            x: 0.71406937
+            y: -0.3934775
+            z: 0.6474781
+          radius: 0.1065225
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.412817
+            y: -0.4346185
+            z: -1.4277852
+          radius: 0.058843352
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9500556
+                y: 0.86834043
+                z: 0.9143635
+        - type: Sphere
+          center:
+            x: 4.412817
+            y: -0.4346185
+            z: -1.4277852
+          radius: 0.065381505
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.8240433
+            y: -0.33658862
+            z: 3.0386972
+          radius: 0.14707024
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9800586
+                y: 0.87989867
+                z: 0.8057997
+        - type: Sphere
+          center:
+            x: -3.8240433
+            y: -0.33658862
+            z: 3.0386972
+          radius: 0.16341138
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.4721107
+            y: -0.3095889
+            z: 2.631185
+          radius: 0.17136998
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7196378
+                y: 0.7723553
+                z: 0.7639642
+        - type: Sphere
+          center:
+            x: -1.4721107
+            y: -0.3095889
+            z: 2.631185
+          radius: 0.1904111
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.283865
+            y: -0.4242146
+            z: 1.7214203
+          radius: 0.068206854
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9405565
+                y: 0.7761727
+                z: 0.77963585
+        - type: Sphere
+          center:
+            x: 2.283865
+            y: -0.4242146
+            z: 1.7214203
+          radius: 0.0757854
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.0713208
+            y: -0.43951067
+            z: 2.818862
+          radius: 0.054440383
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.99082863
+                y: 0.95810044
+                z: 0.8918224
+        - type: Sphere
+          center:
+            x: -1.0713208
+            y: -0.43951067
+            z: 2.818862
+          radius: 0.060489316
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.8304648
+            y: -0.36572278
+            z: 0.17349243
+          radius: 0.12084951
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9088595
+                y: 0.7830597
+                z: 0.7736714
+        - type: Sphere
+          center:
+            x: 2.8304648
+            y: -0.36572278
+            z: 0.17349243
+          radius: 0.13427724
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.0070848
+            y: -0.30152792
+            z: 0.15915394
+          radius: 0.17862485
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9350921
+                y: 0.74668694
+                z: 0.92469704
+        - type: Sphere
+          center:
+            x: 1.0070848
+            y: -0.30152792
+            z: 0.15915394
+          radius: 0.19847207
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.6232271
+            y: -0.38503656
+            z: 1.0057602
+          radius: 0.10346709
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.95472336
+                y: 0.75925064
+                z: 0.8513237
+        - type: Sphere
+          center:
+            x: 0.6232271
+            y: -0.38503656
+            z: 1.0057602
+          radius: 0.11496344
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.08296871
+            y: -0.41416222
+            z: -2.2507477
+          radius: 0.07725399
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8024933
+                y: 0.9721358
+                z: 0.8573608
+        - type: Sphere
+          center:
+            x: 0.08296871
+            y: -0.41416222
+            z: -2.2507477
+          radius: 0.08583777
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.5496397
+            y: -0.39727402
+            z: 1.1019945
+          radius: 0.092453375
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.84708285
+                y: 0.8761384
+                z: 0.7959134
+        - type: Sphere
+          center:
+            x: 1.5496397
+            y: -0.39727402
+            z: 1.1019945
+          radius: 0.102725975
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.2306397
+            y: -0.31013626
+            z: -2.9190755
+          radius: 0.17087737
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7591726
+                y: 0.904582
+                z: 0.999451
+        - type: Sphere
+          center:
+            x: -3.2306397
+            y: -0.31013626
+            z: -2.9190755
+          radius: 0.18986374
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.7033281
+            y: -0.4495273
+            z: 4.7598724
+          radius: 0.045425426
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8119932
+                y: 0.75378495
+                z: 0.834032
+        - type: Sphere
+          center:
+            x: 2.7033281
+            y: -0.4495273
+            z: 4.7598724
+          radius: 0.050472695
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.0894723
+            y: -0.42269403
+            z: -2.9499161
+          radius: 0.06957537
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9761851
+                y: 0.97194093
+                z: 0.89246607
+        - type: Sphere
+          center:
+            x: -4.0894723
+            y: -0.42269403
+            z: -2.9499161
+          radius: 0.077305965
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.7068272
+            y: -0.33047304
+            z: -3.0377066
+          radius: 0.15257427
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.961027
+                y: 0.9421529
+                z: 0.86833525
+        - type: Sphere
+          center:
+            x: 2.7068272
+            y: -0.33047304
+            z: -3.0377066
+          radius: 0.16952696
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.804267
+            y: -0.3662098
+            z: 1.8519058
+          radius: 0.12041117
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.973969
+                y: 0.94467175
+                z: 0.8863948
+        - type: Sphere
+          center:
+            x: 4.804267
+            y: -0.3662098
+            z: 1.8519058
+          radius: 0.1337902
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.121457
+            y: -0.41105855
+            z: 4.9694204
+          radius: 0.08004731
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7531589
+                y: 0.7615906
+                z: 0.7512148
+        - type: Sphere
+          center:
+            x: 2.121457
+            y: -0.41105855
+            z: 4.9694204
+          radius: 0.088941455
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.4827442
+            y: -0.3304601
+            z: -2.6904118
+          radius: 0.15258591
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8208695
+                y: 0.9069487
+                z: 0.94211257
+        - type: Sphere
+          center:
+            x: 2.4827442
+            y: -0.3304601
+            z: -2.6904118
+          radius: 0.1695399
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.9843473
+            y: -0.32752153
+            z: 3.395485
+          radius: 0.15523061
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.78917533
+                y: 0.8270676
+                z: 0.7095983
+        - type: Sphere
+          center:
+            x: -2.9843473
+            y: -0.32752153
+            z: 3.395485
+          radius: 0.17247847
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.555706
+            y: -0.38555172
+            z: -2.605331
+          radius: 0.10300345
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9015436
+                y: 0.8697197
+                z: 0.7256251
+        - type: Sphere
+          center:
+            x: 0.555706
+            y: -0.38555172
+            z: -2.605331
+          radius: 0.11444828
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.1700273
+            y: -0.3703867
+            z: 4.273142
+          radius: 0.116651975
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7473566
+                y: 0.9702658
+                z: 0.75654733
+        - type: Sphere
+          center:
+            x: 1.1700273
+            y: -0.3703867
+            z: 4.273142
+          radius: 0.12961331
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.8931153
+            y: -0.4000309
+            z: -2.1821368
+          radius: 0.08997216
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.82472
+                y: 0.9622305
+                z: 0.9522985
+        - type: Sphere
+          center:
+            x: -2.8931153
+            y: -0.4000309
+            z: -2.1821368
+          radius: 0.099969074
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.409742
+            y: -0.324251
+            z: -1.0776198
+          radius: 0.15817411
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.869217
+                y: 0.81781006
+                z: 0.7155277
+        - type: Sphere
+          center:
+            x: -3.409742
+            y: -0.324251
+            z: -1.0776198
+          radius: 0.17574902
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.012283325
+            y: -0.38905346
+            z: 0.009075165
+          radius: 0.09985189
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.97052616
+                y: 0.9291528
+                z: 0.83191335
+        - type: Sphere
+          center:
+            x: -0.012283325
+            y: -0.38905346
+            z: 0.009075165
+          radius: 0.11094655
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.9456849
+            y: -0.40534762
+            z: -4.0763865
+          radius: 0.085187145
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9733368
+                y: 0.75132626
+                z: 0.8494178
+        - type: Sphere
+          center:
+            x: -0.9456849
+            y: -0.40534762
+            z: -4.0763865
+          radius: 0.094652385
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.99716187
+            y: -0.31870735
+            z: 2.9892597
+          radius: 0.16316338
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7737712
+                y: 0.88169795
+                z: 0.71758586
+        - type: Sphere
+          center:
+            x: 0.99716187
+            y: -0.31870735
+            z: 2.9892597
+          radius: 0.18129265
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.3139439
+            y: -0.39988485
+            z: 1.5012894
+          radius: 0.09010363
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7079899
+                y: 0.8993667
+                z: 0.9798399
+        - type: Sphere
+          center:
+            x: 3.3139439
+            y: -0.39988485
+            z: 1.5012894
+          radius: 0.10011515
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.818692
+            y: -0.43260777
+            z: -4.2002726
+          radius: 0.06065302
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.72680366
+                y: 0.8158403
+                z: 0.90271115
+        - type: Sphere
+          center:
+            x: -4.818692
+            y: -0.43260777
+            z: -4.2002726
+          radius: 0.067392245
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.82090616
+            y: -0.4179275
+            z: -1.9614542
+          radius: 0.07386526
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9793963
+                y: 0.87352425
+                z: 0.7969124
+        - type: Sphere
+          center:
+            x: 0.82090616
+            y: -0.4179275
+            z: -1.9614542
+          radius: 0.08207251
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.9652252
+            y: -0.3685794
+            z: 4.5470057
+          radius: 0.11827853
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.934553
+                y: 0.95020723
+                z: 0.84392345
+        - type: Sphere
+          center:
+            x: -3.9652252
+            y: -0.3685794
+            z: 4.5470057
+          radius: 0.1314206
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.021188
+            y: -0.35789478
+            z: -4.205965
+          radius: 0.1278947
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.95786995
+                y: 0.8263475
+                z: 0.82818604
+        - type: Sphere
+          center:
+            x: 4.021188
+            y: -0.35789478
+            z: -4.205965
+          radius: 0.14210522
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.4260414
+            y: -0.3423866
+            z: 1.3749304
+          radius: 0.14185207
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9892071
+                y: 0.9591751
+                z: 0.91390526
+        - type: Sphere
+          center:
+            x: -2.4260414
+            y: -0.3423866
+            z: 1.3749304
+          radius: 0.15761341
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.2067795
+            y: -0.3890669
+            z: 0.5981207
+          radius: 0.09983979
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8652786
+                y: 0.8095242
+                z: 0.78473854
+        - type: Sphere
+          center:
+            x: 4.2067795
+            y: -0.3890669
+            z: 0.5981207
+          radius: 0.1109331
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.41392803
+            y: -0.43368024
+            z: -1.109438
+          radius: 0.059687786
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.97998226
+                y: 0.736045
+                z: 0.7249807
+        - type: Sphere
+          center:
+            x: -0.41392803
+            y: -0.43368024
+            z: -1.109438
+          radius: 0.06631976
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.6740313
+            y: -0.31340986
+            z: -0.108406544
+          radius: 0.16793112
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.80318224
+                y: 0.7377695
+                z: 0.95489216
+        - type: Sphere
+          center:
+            x: 1.6740313
+            y: -0.31340986
+            z: -0.108406544
+          radius: 0.18659014
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.0587835
+            y: -0.44019473
+            z: -0.71580315
+          radius: 0.053824753
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8032532
+                y: 0.884473
+                z: 0.757172
+        - type: Sphere
+          center:
+            x: 2.0587835
+            y: -0.44019473
+            z: -0.71580315
+          radius: 0.05980528
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.134964
+            y: -0.37601337
+            z: -0.06355047
+          radius: 0.111587964
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.80676544
+                y: 0.79506147
+                z: 0.97104806
+        - type: Sphere
+          center:
+            x: 4.134964
+            y: -0.37601337
+            z: -0.06355047
+          radius: 0.12398663
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.5201776
+            y: -0.3242173
+            z: -2.2923577
+          radius: 0.15820444
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7339503
+                y: 0.8425117
+                z: 0.8737268
+        - type: Sphere
+          center:
+            x: -3.5201776
+            y: -0.3242173
+            z: -2.2923577
+          radius: 0.17578271
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.2838917
+            y: -0.4405535
+            z: 4.660138
+          radius: 0.05350186
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7938386
+                y: 0.9196127
+                z: 0.70603627
+        - type: Sphere
+          center:
+            x: 2.2838917
+            y: -0.4405535
+            z: 4.660138
+          radius: 0.05944651
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.4259014
+            y: -0.33482492
+            z: -3.8513076
+          radius: 0.14865758
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.85361457
+                y: 0.7649
+                z: 0.7215058
+        - type: Sphere
+          center:
+            x: -4.4259014
+            y: -0.33482492
+            z: -3.8513076
+          radius: 0.1651751
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.602439
+            y: -0.42330176
+            z: -0.4281988
+          radius: 0.069028415
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.77501446
+                y: 0.9630362
+                z: 0.93027896
+        - type: Sphere
+          center:
+            x: -2.602439
+            y: -0.42330176
+            z: -0.4281988
+          radius: 0.07669824
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.762805
+            y: -0.39273193
+            z: -0.6347618
+          radius: 0.096541256
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.92554784
+                y: 0.7115913
+                z: 0.9640976
+        - type: Sphere
+          center:
+            x: 2.762805
+            y: -0.39273193
+            z: -0.6347618
+          radius: 0.107268065
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.7754831
+            y: -0.32717097
+            z: 0.8538332
+          radius: 0.15554613
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9425863
+                y: 0.9484672
+                z: 0.9125928
+        - type: Sphere
+          center:
+            x: 3.7754831
+            y: -0.32717097
+            z: 0.8538332
+          radius: 0.17282903
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.7002711
+            y: -0.32303694
+            z: -0.83415985
+          radius: 0.15926675
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.73346204
+                y: 0.9651005
+                z: 0.9500252
+        - type: Sphere
+          center:
+            x: -0.7002711
+            y: -0.32303694
+            z: -0.83415985
+          radius: 0.17696306
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.4709797
+            y: -0.38729948
+            z: -3.459102
+          radius: 0.10143047
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7653184
+                y: 0.8311001
+                z: 0.9360212
+        - type: Sphere
+          center:
+            x: 4.4709797
+            y: -0.38729948
+            z: -3.459102
+          radius: 0.11270052
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.0438304
+            y: -0.43244517
+            z: -4.98952
+          radius: 0.06079936
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.812583
+                y: 0.7683011
+                z: 0.95927393
+        - type: Sphere
+          center:
+            x: -3.0438304
+            y: -0.43244517
+            z: -4.98952
+          radius: 0.06755485
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.915939
+            y: -0.31988966
+            z: -3.8845408
+          radius: 0.16209929
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8420942
+                y: 0.7796698
+                z: 0.74570405
+        - type: Sphere
+          center:
+            x: -2.915939
+            y: -0.31988966
+            z: -3.8845408
+          radius: 0.18011032
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.39471
+            y: -0.31745362
+            z: 0.6589937
+          radius: 0.16429172
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.71161497
+                y: 0.95986044
+                z: 0.89791095
+        - type: Sphere
+          center:
+            x: -4.39471
+            y: -0.31745362
+            z: 0.6589937
+          radius: 0.18254636
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.9752927
+            y: -0.36647946
+            z: -0.92804337
+          radius: 0.1201685
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.73547155
+                y: 0.94932175
+                z: 0.9322999
+        - type: Sphere
+          center:
+            x: -4.9752927
+            y: -0.36647946
+            z: -0.92804337
+          radius: 0.13352056
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.25490856
+            y: -0.30003628
+            z: -0.90389824
+          radius: 0.17996734
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.80814433
+                y: 0.9928024
+                z: 0.9419224
+        - type: Sphere
+          center:
+            x: -0.25490856
+            y: -0.30003628
+            z: -0.90389824
+          radius: 0.19996372
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.4118624
+            y: -0.4430936
+            z: -1.6885185
+          radius: 0.051215746
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.884518
+                y: 0.7302291
+                z: 0.73520064
+        - type: Sphere
+          center:
+            x: 1.4118624
+            y: -0.4430936
+            z: -1.6885185
+          radius: 0.056906387
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.5504968
+            y: -0.37233442
+            z: 3.5984793
+          radius: 0.11489902
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.96961796
+                y: 0.8204379
+                z: 0.7659579
+        - type: Sphere
+          center:
+            x: -1.5504968
+            y: -0.37233442
+            z: 3.5984793
+          radius: 0.12766558
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.9752016
+            y: -0.37660182
+            z: 0.31891108
+          radius: 0.11105838
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9435611
+                y: 0.7630662
+                z: 0.9614532
+        - type: Sphere
+          center:
+            x: 3.9752016
+            y: -0.37660182
+            z: 0.31891108
+          radius: 0.1233982
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.6696455
+            y: -0.33446807
+            z: -1.6768289
+          radius: 0.14897874
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.98314
+                y: 0.9969338
+                z: 0.94969505
+        - type: Sphere
+          center:
+            x: -2.6696455
+            y: -0.33446807
+            z: -1.6768289
+          radius: 0.16553193
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.603843
+            y: -0.40779075
+            z: -4.070008
+          radius: 0.08298832
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7326802
+                y: 0.7742997
+                z: 0.8293499
+        - type: Sphere
+          center:
+            x: -1.603843
+            y: -0.40779075
+            z: -4.070008
+          radius: 0.09220925
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.6410971
+            y: -0.37967074
+            z: -3.3238196
+          radius: 0.108296335
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7219287
+                y: 0.98594534
+                z: 0.96926916
+        - type: Sphere
+          center:
+            x: -1.6410971
+            y: -0.37967074
+            z: -3.3238196
+          radius: 0.12032926
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.66538334
+            y: -0.35318118
+            z: 4.3679295
+          radius: 0.13213693
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.91701365
+                y: 0.82468164
+                z: 0.9590676
+        - type: Sphere
+          center:
+            x: 0.66538334
+            y: -0.35318118
+            z: 4.3679295
+          radius: 0.14681882
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.13090992
+            y: -0.30262357
+            z: -1.8375885
+          radius: 0.17763877
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7069079
+                y: 0.79411304
+                z: 0.74223804
+        - type: Sphere
+          center:
+            x: 0.13090992
+            y: -0.30262357
+            z: -1.8375885
+          radius: 0.19737642
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.4097233
+            y: -0.34618425
+            z: 2.1484861
+          radius: 0.13843416
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8959794
+                y: 0.77669585
+                z: 0.8575219
+        - type: Sphere
+          center:
+            x: 3.4097233
+            y: -0.34618425
+            z: 2.1484861
+          radius: 0.15381573
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.25494
+            y: -0.33672768
+            z: 3.9248333
+          radius: 0.14694509
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9533193
+                y: 0.7589044
+                z: 0.88116777
+        - type: Sphere
+          center:
+            x: -1.25494
+            y: -0.33672768
+            z: 3.9248333
+          radius: 0.16327232
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.26254416
+            y: -0.4488011
+            z: -3.490529
+          radius: 0.046079006
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.87636423
+                y: 0.9259112
+                z: 0.93950665
+        - type: Sphere
+          center:
+            x: -0.26254416
+            y: -0.4488011
+            z: -3.490529
+          radius: 0.051198896
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.2165146
+            y: -0.44308698
+            z: -1.49055
+          radius: 0.051221702
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.73843384
+                y: 0.916775
+                z: 0.8116387
+        - type: Sphere
+          center:
+            x: 3.2165146
+            y: -0.44308698
+            z: -1.49055
+          radius: 0.056913003
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.7031353
+            y: -0.30314142
+            z: 4.2568245
+          radius: 0.17717274
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9854161
+                y: 0.7214443
+                z: 0.95187116
+        - type: Sphere
+          center:
+            x: -3.7031353
+            y: -0.30314142
+            z: 4.2568245
+          radius: 0.1968586
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.2750762
+            y: -0.31270993
+            z: -4.6554303
+          radius: 0.16856107
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.79867756
+                y: 0.98530996
+                z: 0.89428484
+        - type: Sphere
+          center:
+            x: -3.2750762
+            y: -0.31270993
+            z: -4.6554303
+          radius: 0.18729009
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.9759505
+            y: -0.33575028
+            z: -2.6754093
+          radius: 0.14782473
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.92060673
+                y: 0.8276837
+                z: 0.7270927
+        - type: Sphere
+          center:
+            x: -3.9759505
+            y: -0.33575028
+            z: -2.6754093
+          radius: 0.1642497
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.0382509
+            y: -0.40931967
+            z: -2.279055
+          radius: 0.0816123
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9757898
+                y: 0.9608269
+                z: 0.99728227
+        - type: Sphere
+          center:
+            x: 1.0382509
+            y: -0.40931967
+            z: -2.279055
+          radius: 0.09068033
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.1946516
+            y: -0.33066124
+            z: -4.1467333
+          radius: 0.15240489
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9618449
+                y: 0.84217864
+                z: 0.9253927
+        - type: Sphere
+          center:
+            x: 2.1946516
+            y: -0.33066124
+            z: -4.1467333
+          radius: 0.16933876
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.7815845
+            y: -0.39208367
+            z: -3.2013953
+          radius: 0.097124696
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.868886
+                y: 0.71336114
+                z: 0.97473395
+        - type: Sphere
+          center:
+            x: -3.7815845
+            y: -0.39208367
+            z: -3.2013953
+          radius: 0.10791633
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.8698807
+            y: -0.33141643
+            z: -3.5989916
+          radius: 0.1517252
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8512154
+                y: 0.7196372
+                z: 0.7620312
+        - type: Sphere
+          center:
+            x: 3.8698807
+            y: -0.33141643
+            z: -3.5989916
+          radius: 0.16858356
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.524932
+            y: -0.33780652
+            z: 2.7686033
+          radius: 0.14597413
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.74575126
+                y: 0.8850187
+                z: 0.9028666
+        - type: Sphere
+          center:
+            x: -4.524932
+            y: -0.33780652
+            z: 2.7686033
+          radius: 0.16219348
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.2177434
+            y: -0.3391392
+            z: -1.2472868
+          radius: 0.14477472
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.766939
+                y: 0.8318701
+                z: 0.85354996
+        - type: Sphere
+          center:
+            x: 2.2177434
+            y: -0.3391392
+            z: -1.2472868
+          radius: 0.1608608
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.7173085
+            y: -0.3456142
+            z: -3.670591
+          radius: 0.1389472
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9730263
+                y: 0.9339621
+                z: 0.96947247
+        - type: Sphere
+          center:
+            x: -0.7173085
+            y: -0.3456142
+            z: -3.670591
+          radius: 0.15438579
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.9332688
+            y: -0.42541856
+            z: 1.0817146
+          radius: 0.0671233
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.81116897
+                y: 0.72892946
+                z: 0.8094487
+        - type: Sphere
+          center:
+            x: -3.9332688
+            y: -0.42541856
+            z: 1.0817146
+          radius: 0.074581444
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.4868083
+            y: -0.43554735
+            z: -4.795661
+          radius: 0.058007374
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.83551973
+                y: 0.93694925
+                z: 0.793061
+        - type: Sphere
+          center:
+            x: 2.4868083
+            y: -0.43554735
+            z: -4.795661
+          radius: 0.06445264
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.35197163
+            y: -0.30510372
+            z: 0.03471279
+          radius: 0.17540666
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7279262
+                y: 0.8857286
+                z: 0.7169591
+        - type: Sphere
+          center:
+            x: 0.35197163
+            y: -0.30510372
+            z: 0.03471279
+          radius: 0.1948963
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.963562
+            y: -0.43810463
+            z: -1.0839236
+          radius: 0.05570583
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9053179
+                y: 0.94276303
+                z: 0.8177197
+        - type: Sphere
+          center:
+            x: 4.963562
+            y: -0.43810463
+            z: -1.0839236
+          radius: 0.061895367
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.4798832
+            y: -0.31631893
+            z: 3.0957403
+          radius: 0.16531298
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.81918865
+                y: 0.84868044
+                z: 0.81188047
+        - type: Sphere
+          center:
+            x: 3.4798832
+            y: -0.31631893
+            z: 3.0957403
+          radius: 0.18368109
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.78451633
+            y: -0.40799105
+            z: -1.7197633
+          radius: 0.08280804
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.81690514
+                y: 0.98548496
+                z: 0.8994318
+        - type: Sphere
+          center:
+            x: -0.78451633
+            y: -0.40799105
+            z: -1.7197633
+          radius: 0.09200893
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.433019
+            y: -0.39948383
+            z: -3.4286058
+          radius: 0.09046455
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.84676087
+                y: 0.7653452
+                z: 0.9227009
+        - type: Sphere
+          center:
+            x: -4.433019
+            y: -0.39948383
+            z: -3.4286058
+          radius: 0.10051617
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.6976178
+            y: -0.32931158
+            z: 0.8616247
+          radius: 0.15361957
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.71082664
+                y: 0.97792774
+                z: 0.74087864
+        - type: Sphere
+          center:
+            x: -1.6976178
+            y: -0.32931158
+            z: 0.8616247
+          radius: 0.17068842
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.4969387
+            y: -0.32475448
+            z: 2.3485088
+          radius: 0.15772098
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.90592563
+                y: 0.92122066
+                z: 0.89114
+        - type: Sphere
+          center:
+            x: 2.4969387
+            y: -0.32475448
+            z: 2.3485088
+          radius: 0.17524554
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.272771
+            y: -0.32393527
+            z: -1.2806046
+          radius: 0.15845826
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7927379
+                y: 0.97650003
+                z: 0.7312292
+        - type: Sphere
+          center:
+            x: 3.272771
+            y: -0.32393527
+            z: -1.2806046
+          radius: 0.17606474
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.5983033
+            y: -0.38685066
+            z: 0.07256508
+          radius: 0.10183441
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.741396
+                y: 0.91478515
+                z: 0.8214053
+        - type: Sphere
+          center:
+            x: -1.5983033
+            y: -0.38685066
+            z: 0.07256508
+          radius: 0.113149345
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.186743
+            y: -0.37002468
+            z: -4.2054644
+          radius: 0.116977796
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.96935165
+                y: 0.79814374
+                z: 0.8359056
+        - type: Sphere
+          center:
+            x: -2.186743
+            y: -0.37002468
+            z: -4.2054644
+          radius: 0.12997533
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.7415533
+            y: -0.3502279
+            z: 0.2854147
+          radius: 0.13479489
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.82847637
+                y: 0.76390123
+                z: 0.9206314
+        - type: Sphere
+          center:
+            x: -0.7415533
+            y: -0.3502279
+            z: 0.2854147
+          radius: 0.14977211
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.8560474
+            y: -0.32145226
+            z: -2.0743287
+          radius: 0.16069295
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9114011
+                y: 0.94143814
+                z: 0.86802876
+        - type: Sphere
+          center:
+            x: -3.8560474
+            y: -0.32145226
+            z: -2.0743287
+          radius: 0.17854773
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.612029
+            y: -0.31189495
+            z: 0.78861
+          radius: 0.16929454
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.962819
+                y: 0.80356646
+                z: 0.98124206
+        - type: Sphere
+          center:
+            x: 2.612029
+            y: -0.31189495
+            z: 0.78861
+          radius: 0.18810505
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.20499325
+            y: -0.39116794
+            z: -4.9572573
+          radius: 0.09794885
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.71656054
+                y: 0.70803374
+                z: 0.87842613
+        - type: Sphere
+          center:
+            x: -0.20499325
+            y: -0.39116794
+            z: -4.9572573
+          radius: 0.10883206
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.8799944
+            y: -0.41071072
+            z: -3.4256303
+          radius: 0.08036035
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.72834194
+                y: 0.7832787
+                z: 0.9431276
+        - type: Sphere
+          center:
+            x: 0.8799944
+            y: -0.41071072
+            z: -3.4256303
+          radius: 0.089289285
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.86710835
+            y: -0.39998507
+            z: -0.39910555
+          radius: 0.090013444
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8355321
+                y: 0.9427358
+                z: 0.888184
+        - type: Sphere
+          center:
+            x: -0.86710835
+            y: -0.39998507
+            z: -0.39910555
+          radius: 0.10001494
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.045075
+            y: -0.3443625
+            z: 1.2169433
+          radius: 0.14007375
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.88639766
+                y: 0.98644453
+                z: 0.8942098
+        - type: Sphere
+          center:
+            x: -3.045075
+            y: -0.3443625
+            z: 1.2169433
+          radius: 0.1556375
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.7968779
+            y: -0.37493855
+            z: 3.9007769
+          radius: 0.11255529
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.77973396
+                y: 0.93410033
+                z: 0.8660973
+        - type: Sphere
+          center:
+            x: 3.7968779
+            y: -0.37493855
+            z: 3.9007769
+          radius: 0.12506144
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.9746819
+            y: -0.4014843
+            z: 2.507329
+          radius: 0.08866411
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9682856
+                y: 0.9622363
+                z: 0.9014547
+        - type: Sphere
+          center:
+            x: 2.9746819
+            y: -0.4014843
+            z: 2.507329
+          radius: 0.098515674
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.8832083
+            y: -0.36979467
+            z: 4.718748
+          radius: 0.11718481
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.83209205
+                y: 0.86991274
+                z: 0.8282896
+        - type: Sphere
+          center:
+            x: -4.8832083
+            y: -0.36979467
+            z: 4.718748
+          radius: 0.13020535
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.9470682
+            y: -0.37178782
+            z: -1.7320168
+          radius: 0.115390964
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7430773
+                y: 0.8076223
+                z: 0.90139985
+        - type: Sphere
+          center:
+            x: 3.9470682
+            y: -0.37178782
+            z: -1.7320168
+          radius: 0.12821218
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.3440037
+            y: -0.35066712
+            z: -0.43692684
+          radius: 0.13439958
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.94794065
+                y: 0.7213871
+                z: 0.83078957
+        - type: Sphere
+          center:
+            x: 3.3440037
+            y: -0.35066712
+            z: -0.43692684
+          radius: 0.14933287
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.259404
+            y: -0.30577818
+            z: 2.4172344
+          radius: 0.17479964
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.95956266
+                y: 0.89875835
+                z: 0.7787496
+        - type: Sphere
+          center:
+            x: 4.259404
+            y: -0.30577818
+            z: 2.4172344
+          radius: 0.19422182
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.202553
+            y: -0.42980692
+            z: -1.9836128
+          radius: 0.06317377
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7272204
+                y: 0.8674831
+                z: 0.8625924
+        - type: Sphere
+          center:
+            x: -4.202553
+            y: -0.42980692
+            z: -1.9836128
+          radius: 0.07019308
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.240597
+            y: -0.32857537
+            z: 1.4047012
+          radius: 0.15428215
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9250102
+                y: 0.9645776
+                z: 0.9242606
+        - type: Sphere
+          center:
+            x: 4.240597
+            y: -0.32857537
+            z: 1.4047012
+          radius: 0.17142461
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.1732972
+            y: -0.3980456
+            z: -3.7435937
+          radius: 0.09175897
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.96100533
+                y: 0.9408705
+                z: 0.9855052
+        - type: Sphere
+          center:
+            x: -1.1732972
+            y: -0.3980456
+            z: -3.7435937
+          radius: 0.10195441
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.720685
+            y: -0.44487438
+            z: -2.4705458
+          radius: 0.049613066
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.765526
+                y: 0.9800248
+                z: 0.9680674
+        - type: Sphere
+          center:
+            x: 1.720685
+            y: -0.44487438
+            z: -2.4705458
+          radius: 0.05512563
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.7259355
+            y: -0.3214612
+            z: 1.4037371
+          radius: 0.16068493
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9645878
+                y: 0.9906901
+                z: 0.8468227
+        - type: Sphere
+          center:
+            x: -4.7259355
+            y: -0.3214612
+            z: 1.4037371
+          radius: 0.17853881
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.8872797
+            y: -0.33381176
+            z: 0.12373352
+          radius: 0.14956942
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.92023134
+                y: 0.76851356
+                z: 0.96769243
+        - type: Sphere
+          center:
+            x: -1.8872797
+            y: -0.33381176
+            z: 0.12373352
+          radius: 0.16618825
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.9361668
+            y: -0.31324235
+            z: -0.41275978
+          radius: 0.16808188
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.73339605
+                y: 0.7360909
+                z: 0.84194666
+        - type: Sphere
+          center:
+            x: -3.9361668
+            y: -0.31324235
+            z: -0.41275978
+          radius: 0.18675765
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.4000978
+            y: -0.33621198
+            z: -3.8555765
+          radius: 0.1474092
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9913614
+                y: 0.7031333
+                z: 0.76400375
+        - type: Sphere
+          center:
+            x: 1.4000978
+            y: -0.33621198
+            z: -3.8555765
+          radius: 0.163788
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.1298103
+            y: -0.42895263
+            z: -0.5226145
+          radius: 0.06394264
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.70990795
+                y: 0.9880634
+                z: 0.8701714
+        - type: Sphere
+          center:
+            x: 3.1298103
+            y: -0.42895263
+            z: -0.5226145
+          radius: 0.07104738
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.3153725
+            y: -0.41760337
+            z: -0.82175016
+          radius: 0.07415695
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9435998
+                y: 0.8228394
+                z: 0.9670963
+        - type: Sphere
+          center:
+            x: 3.3153725
+            y: -0.41760337
+            z: -0.82175016
+          radius: 0.08239661
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.7913904
+            y: -0.34532997
+            z: 4.077112
+          radius: 0.13920303
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9061198
+                y: 0.9110669
+                z: 0.89822185
+        - type: Sphere
+          center:
+            x: 1.7913904
+            y: -0.34532997
+            z: 4.077112
+          radius: 0.15467003
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.29678345
+            y: -0.40385956
+            z: 0.06412125
+          radius: 0.0865264
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8716012
+                y: 0.8962527
+                z: 0.76234984
+        - type: Sphere
+          center:
+            x: -0.29678345
+            y: -0.40385956
+            z: 0.06412125
+          radius: 0.09614045
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.0406101
+            y: -0.44761238
+            z: -4.979392
+          radius: 0.04714885
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7675613
+                y: 0.81461155
+                z: 0.76368797
+        - type: Sphere
+          center:
+            x: -1.0406101
+            y: -0.44761238
+            z: -4.979392
+          radius: 0.052387614
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.3209019
+            y: -0.3078009
+            z: -2.7566123
+          radius: 0.17297918
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7178657
+                y: 0.9936073
+                z: 0.7431766
+        - type: Sphere
+          center:
+            x: 1.3209019
+            y: -0.3078009
+            z: -2.7566123
+          radius: 0.1921991
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.9902802
+            y: -0.44769615
+            z: 4.3035793
+          radius: 0.047073454
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.91838217
+                y: 0.8269528
+                z: 0.8959862
+        - type: Sphere
+          center:
+            x: -1.9902802
+            y: -0.44769615
+            z: 4.3035793
+          radius: 0.05230384
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.429845
+            y: -0.38568693
+            z: -3.1727874
+          radius: 0.102881745
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.85596365
+                y: 0.75774175
+                z: 0.8308869
+        - type: Sphere
+          center:
+            x: 4.429845
+            y: -0.38568693
+            z: -3.1727874
+          radius: 0.11431305
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.649764
+            y: -0.43571106
+            z: -2.6020217
+          radius: 0.057860043
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8976666
+                y: 0.99606866
+                z: 0.7134432
+        - type: Sphere
+          center:
+            x: 3.649764
+            y: -0.43571106
+            z: -2.6020217
+          radius: 0.06428894
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.6066704
+            y: -0.38136333
+            z: 1.8408537
+          radius: 0.10677301
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.76509225
+                y: 0.7593205
+                z: 0.9518977
+        - type: Sphere
+          center:
+            x: -0.6066704
+            y: -0.38136333
+            z: 1.8408537
+          radius: 0.11863668
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.542369
+            y: -0.34696978
+            z: -0.28825855
+          radius: 0.1377272
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.86997664
+                y: 0.7838706
+                z: 0.71439123
+        - type: Sphere
+          center:
+            x: 4.542369
+            y: -0.34696978
+            z: -0.28825855
+          radius: 0.15303023
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.2157354
+            y: -0.43688872
+            z: 4.696988
+          radius: 0.05680014
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.72036284
+                y: 0.98703754
+                z: 0.97472394
+        - type: Sphere
+          center:
+            x: -4.2157354
+            y: -0.43688872
+            z: 4.696988
+          radius: 0.06311127
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.2079086
+            y: -0.30345744
+            z: -2.6998281
+          radius: 0.17688832
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8074794
+                y: 0.94250786
+                z: 0.7671999
+        - type: Sphere
+          center:
+            x: -2.2079086
+            y: -0.30345744
+            z: -2.6998281
+          radius: 0.19654258
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.32680893
+            y: -0.3805437
+            z: -2.3588645
+          radius: 0.10751067
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7619185
+                y: 0.80377567
+                z: 0.9864004
+        - type: Sphere
+          center:
+            x: -0.32680893
+            y: -0.3805437
+            z: -2.3588645
+          radius: 0.119456306
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.667984
+            y: -0.37842733
+            z: 0.6085434
+          radius: 0.10941539
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7647213
+                y: 0.8728845
+                z: 0.9499535
+        - type: Sphere
+          center:
+            x: 4.667984
+            y: -0.37842733
+            z: 0.6085434
+          radius: 0.12157266
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.5131998
+            y: -0.32337695
+            z: -1.2812078
+          radius: 0.15896073
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7131741
+                y: 0.84161246
+                z: 0.7147694
+        - type: Sphere
+          center:
+            x: -1.5131998
+            y: -0.32337695
+            z: -1.2812078
+          radius: 0.17662303
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.0461323
+            y: -0.4356648
+            z: -3.6736393
+          radius: 0.05790167
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9796088
+                y: 0.92302704
+                z: 0.9662912
+        - type: Sphere
+          center:
+            x: -3.0461323
+            y: -0.4356648
+            z: -3.6736393
+          radius: 0.06433519
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.1313972
+            y: -0.41054064
+            z: -0.06563902
+          radius: 0.08051343
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7534792
+                y: 0.72148615
+                z: 0.9599178
+        - type: Sphere
+          center:
+            x: -4.1313972
+            y: -0.41054064
+            z: -0.06563902
+          radius: 0.089459375
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.8545356
+            y: -0.39153728
+            z: 1.9423628
+          radius: 0.09761645
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.79717207
+                y: 0.9749974
+                z: 0.8079337
+        - type: Sphere
+          center:
+            x: 2.8545356
+            y: -0.39153728
+            z: 1.9423628
+          radius: 0.10846272
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.6626062
+            y: -0.33491492
+            z: 2.4596286
+          radius: 0.14857656
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7694633
+                y: 0.8095267
+                z: 0.8770765
+        - type: Sphere
+          center:
+            x: 1.6626062
+            y: -0.33491492
+            z: 2.4596286
+          radius: 0.16508506
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.6845207
+            y: -0.35463607
+            z: -4.3817472
+          radius: 0.13082752
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7661235
+                y: 0.9403748
+                z: 0.7500202
+        - type: Sphere
+          center:
+            x: -3.6845207
+            y: -0.35463607
+            z: -4.3817472
+          radius: 0.14536391
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.8616242
+            y: -0.3305061
+            z: 3.9375935
+          radius: 0.15254451
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.72304046
+                y: 0.86214995
+                z: 0.81362295
+        - type: Sphere
+          center:
+            x: -4.8616242
+            y: -0.3305061
+            z: 3.9375935
+          radius: 0.16949391
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.7114477
+            y: -0.34046996
+            z: -4.911499
+          radius: 0.14357702
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9798392
+                y: 0.73334026
+                z: 0.9326944
+        - type: Sphere
+          center:
+            x: 3.7114477
+            y: -0.34046996
+            z: -4.911499
+          radius: 0.15953003
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.450583
+            y: -0.43177646
+            z: 2.0675411
+          radius: 0.061401166
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8237231
+                y: 0.7240514
+                z: 0.76719344
+        - type: Sphere
+          center:
+            x: -2.450583
+            y: -0.43177646
+            z: 2.0675411
+          radius: 0.06822352
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.4150693
+            y: -0.44769728
+            z: 0.22427464
+          radius: 0.04707244
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8471066
+                y: 0.91422653
+                z: 0.99886703
+        - type: Sphere
+          center:
+            x: -2.4150693
+            y: -0.44769728
+            z: 0.22427464
+          radius: 0.052302714
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.24875402
+            y: -0.3625611
+            z: 0.66629314
+          radius: 0.123695016
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9770124
+                y: 0.7286733
+                z: 0.97365355
+        - type: Sphere
+          center:
+            x: -0.24875402
+            y: -0.3625611
+            z: 0.66629314
+          radius: 0.13743891
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.85494137
+            y: -0.34839487
+            z: 3.0461998
+          radius: 0.13644461
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9847808
+                y: 0.9437965
+                z: 0.7522672
+        - type: Sphere
+          center:
+            x: -0.85494137
+            y: -0.34839487
+            z: 3.0461998
+          radius: 0.15160513
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -2.9709423
+            y: -0.3759343
+            z: 2.1971226
+          radius: 0.111659124
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.90925336
+                y: 0.83213264
+                z: 0.7705926
+        - type: Sphere
+          center:
+            x: -2.9709423
+            y: -0.3759343
+            z: 2.1971226
+          radius: 0.1240657
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.010957718
+            y: -0.42943043
+            z: 3.6187706
+          radius: 0.0635126
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.88152444
+                y: 0.76428705
+                z: 0.7425891
+        - type: Sphere
+          center:
+            x: 0.010957718
+            y: -0.42943043
+            z: 3.6187706
+          radius: 0.07056956
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.005730629
+            y: -0.3465832
+            z: 0.48208332
+          radius: 0.13807513
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8728956
+                y: 0.9415902
+                z: 0.87720746
+        - type: Sphere
+          center:
+            x: 0.005730629
+            y: -0.3465832
+            z: 0.48208332
+          radius: 0.15341681
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.016572475
+            y: -0.3890559
+            z: 0.8090806
+          radius: 0.099849686
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.9061849
+                y: 0.8996757
+                z: 0.8304455
+        - type: Sphere
+          center:
+            x: -0.016572475
+            y: -0.3890559
+            z: 0.8090806
+          radius: 0.1109441
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -3.0355048
+            y: -0.37186083
+            z: -4.3999157
+          radius: 0.11532525
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.94657815
+                y: 0.968299
+                z: 0.7697743
+        - type: Sphere
+          center:
+            x: -3.0355048
+            y: -0.37186083
+            z: -4.3999157
+          radius: 0.12813917
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 3.058302
+            y: -0.43706548
+            z: -1.5303719
+          radius: 0.056641057
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.891745
+                y: 0.8991477
+                z: 0.81656325
+        - type: Sphere
+          center:
+            x: 3.058302
+            y: -0.43706548
+            z: -1.5303719
+          radius: 0.06293451
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.6411233
+            y: -0.3537671
+            z: 3.0457869
+          radius: 0.13160959
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8456986
+                y: 0.8862017
+                z: 0.70575136
+        - type: Sphere
+          center:
+            x: -1.6411233
+            y: -0.3537671
+            z: 3.0457869
+          radius: 0.14623289
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 2.6473594
+            y: -0.4482144
+            z: -3.4196246
+          radius: 0.04660704
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8799693
+                y: 0.91675955
+                z: 0.82824266
+        - type: Sphere
+          center:
+            x: 2.6473594
+            y: -0.4482144
+            z: -3.4196246
+          radius: 0.0517856
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.1724174
+            y: -0.36152017
+            z: -1.0671508
+          radius: 0.12463186
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.963035
+                y: 0.94977015
+                z: 0.8441115
+        - type: Sphere
+          center:
+            x: -1.1724174
+            y: -0.36152017
+            z: -1.0671508
+          radius: 0.13847984
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.14419317
+            y: -0.3383668
+            z: 3.8336954
+          radius: 0.14546989
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8057518
+                y: 0.76750565
+                z: 0.919717
+        - type: Sphere
+          center:
+            x: 0.14419317
+            y: -0.3383668
+            z: 3.8336954
+          radius: 0.16163321
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -4.9964023
+            y: -0.42781234
+            z: 1.0680461
+          radius: 0.06496891
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.87617385
+                y: 0.7813402
+                z: 0.7430815
+        - type: Sphere
+          center:
+            x: -4.9964023
+            y: -0.42781234
+            z: 1.0680461
+          radius: 0.07218768
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 4.8772564
+            y: -0.41307104
+            z: 1.0498047
+          radius: 0.078236066
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.75205266
+                y: 0.7480123
+                z: 0.76555365
+        - type: Sphere
+          center:
+            x: 4.8772564
+            y: -0.41307104
+            z: 1.0498047
+          radius: 0.08692896
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.9769707
+            y: -0.39239502
+            z: -2.1042204
+          radius: 0.096844465
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.72187954
+                y: 0.8670242
+                z: 0.707879
+        - type: Sphere
+          center:
+            x: 1.9769707
+            y: -0.39239502
+            z: -2.1042204
+          radius: 0.107604966
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 0.47521353
+            y: -0.42753613
+            z: -2.831136
+          radius: 0.06521749
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7909347
+                y: 0.97947896
+                z: 0.9082233
+        - type: Sphere
+          center:
+            x: 0.47521353
+            y: -0.42753613
+            z: -2.831136
+          radius: 0.07246388
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.5693855
+            y: -0.41537425
+            z: -4.914422
+          radius: 0.07616317
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.7887196
+                y: 0.8522148
+                z: 0.9765061
+        - type: Sphere
+          center:
+            x: 1.5693855
+            y: -0.41537425
+            z: -4.914422
+          radius: 0.08462575
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -0.35467052
+            y: -0.33952844
+            z: -4.514121
+          radius: 0.14442438
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.70609856
+                y: 0.79435915
+                z: 0.7824713
+        - type: Sphere
+          center:
+            x: -0.35467052
+            y: -0.33952844
+            z: -4.514121
+          radius: 0.16047154
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: -1.6915607
+            y: -0.4169618
+            z: -3.6876702
+          radius: 0.0747344
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.8399834
+                y: 0.88188404
+                z: 0.9263762
+        - type: Sphere
+          center:
+            x: -1.6915607
+            y: -0.4169618
+            z: -3.6876702
+          radius: 0.08303822
+          material:
+            type: Dielectric
+            ref_idx: 2
+        - type: Sphere
+          center:
+            x: 1.3444757
+            y: -0.41626033
+            z: -4.316702
+          radius: 0.0753657
+          material:
+            type: DiffuseLight
+            emit:
+              type: ConstantTexture
+              color:
+                x: 0.81535345
+                y: 0.74396175
+                z: 0.75471306
+        - type: Sphere
+          center:
+            x: 1.3444757
+            y: -0.41626033
+            z: -4.316702
+          radius: 0.08373967
+          material:
+            type: Dielectric
+            ref_idx: 2
+camera:
+  look_from:
+    x: -6
+    y: 2
+    z: -6
+  look_at:
+    x: 0
+    y: 0
+    z: -1
+  vup:
+    x: 0
+    y: 1
+    z: 0
+  vfov: 45
+  aspect: 1
+  aperture: 0.1
+  focus_dist: 8.062258
