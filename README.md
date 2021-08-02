@@ -96,8 +96,8 @@ ACM伪摄影公司，简称PPCA，于2021年成立😉
   * 实现一个obj_loader
     * 可调包，如tobj
     * OBJ文件格式和tobj可参考[参考资料](https://docs.rs/tobj/3.0.1/tobj/)或自行搜索
-  * 实现对简单多边形和曲面的渲染
-  * 支持obj可以让你最后的大作更精彩哦 :)                 ~图源参考资料↓~
+  * 实现对简单多边形的渲染
+  * 支持obj可以让你最后的大作更精彩哦 :)                 图源参考资料↓
 
   ![Rust logo with friends](http://i.imgur.com/E1ylrZW.png)
 
