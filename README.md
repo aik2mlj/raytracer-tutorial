@@ -2,6 +2,13 @@
 
 # Pseudo Photograph Company of ACM
 
+工科和ACM的朋友们都已结课！看看这些了不起的艺术品：
+
+- [工科](https://github.com/aik2mlj/raytracer-tutorial/issues/1)
+- [ACM](https://github.com/aik2mlj/raytracer-tutorial/issues/2)
+
+---
+
 ACM伪摄影公司，简称PPCA，于2021年成立😉
 
 这个项目的主要工作是使用Rust语言实现一个光线追踪渲染器。以这个形式，你能通过学习一门新的（而且漂亮的）语言来加深对编程语言设计、编译原理的理解，同时又能趣味性地了解Computer Graphics的基础工作。
@@ -64,10 +71,10 @@ ACM伪摄影公司，简称PPCA，于2021年成立😉
   - 完成3项track即可拿满
   - 如果你手写实现了obj_loader（没有调包），只要完成2项（包括Track 7）即拿满
 
-初定code review：第四周周五
-- book 3相关细节
-- advanced features相关细节
-- ACM班同学结课🎉 作品互评🤯（5pts for ACM）
+- [x] code review：第四周周五
+  - book 3相关细节
+  - advanced features相关细节
+  - ACM班同学结课🎉 作品互评🤯（5pts for ACM）
 
 ### Advanced features
 * **Track 1: Reduce Contention** 此项工作的前提条件是完成多线程渲染。在多线程环境中，clone / drop Arc 可能会导致性能下降。因此，我们要尽量减少 Arc 的使用。这项任务的目标是，仅在线程创建的时候 clone Arc；其他地方不出现 Arc，将 Arc 改为引用。
